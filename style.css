@@ -24,10 +24,8 @@
   } */
 
 :root {
-    --font-family: "Gilroy";
-    --second-family: "Commissioner", sans-serif;
-    --third-family: "Roboto", sans-serif;
-    --font3: "Gilroy", sans-serif;
+    --font-family: "Gilroy", sans-serif;
+    --second-family: "Montserrat", sans-serif;
   }
 
 * {
@@ -42,6 +40,7 @@
     justify-content: center;
     padding: 10px;
     background-color: #fff;
+    font-family: var(--font-family);
 }
 
 .header {
@@ -55,6 +54,7 @@
     /* gap: 357px; */
     /* margin-bottom: 57px; */
     border: 1px solid green;
+    margin-bottom: 65px;
 }
 
 .header__mapmarker, .header__phone {
@@ -92,7 +92,7 @@
 }
 
 .header-nav__link {
-    font-family: var(--font-family);
+    
     font-size: 14px;
     font-weight: 800;
     font-style: normal;
@@ -105,61 +105,109 @@
     margin-right: 452px;
 }
 
+.main, .section, .promo {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+
+}
+
 .h1 {
-    font-family: Gilroy;
     font-size: 64px;
     font-weight: 800;
-    line-height: 72px;
+    line-height: 72px; /* 112.5% */
     text-align: center;
-    text-decoration-skip-ink: none;
+
+    width: 981px;
+    margin-bottom: 48px;
 }
 
-
-
-
-
-
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.text-stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px #222222;
 }
 
-
-
-
-
-
-.section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.promo__h1 {
+.btn {
     position: relative;
     font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 60px;
-    color: #fff;
-    margin-bottom: 87px;
-    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-.promo__h1::after {
-    position: absolute;
-    content: 'на всю жизнь';
-    background: linear-gradient(139deg, #f6689e 0%, #e89737 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    top: 92px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
+.leave-request {
+    width: 207px;
+    height: 40px;
+    margin-bottom: 84px;
 }
+
+.leave-request::before {
+    position: absolute;
+    content: url('./img/Rectangle__btn.svg');
+    top: 5px;
+    left: -13px;                         
+}
+
+
+.wrapper__sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22.5px;
+    width: 100%;
+    height: 344px;
+    padding-top: 173px;
+
+    background-image: url(./img/bg-main.png);
+
+    border: 1px solid green;
+
+}
+
+.sub-menu {
+    display: flex;
+    width: 100%;
+    /* flex: 1; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    /* gap: 1px; */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+
+}
+
+.sub-menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    color: #FFF;
+
+    /* margin: auto; */
+    /* border-width: 1px; */
+    /* border-style: solid, 0 1 0 0; */
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 85px;
+
+}
+
 
 
 
