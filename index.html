@@ -116,14 +116,76 @@
             </h2>
           </div>
           <div class="contacts-info">
-             <div class="contacts-info__address">
+             <address class="address">
+               <div class="address-item">
+                <h3 class="h3 ">
+                  Офис
+                 </h3>
+                 <span>Москва, ул. Уличная, д. 1, оф. 1</span>
+               </div>
+               <div class="address-item">
+                <h3 class="h3 ">
+                  E-mail
+                 </h3>
+                 <span>company@company.ru</span>
+               </div>
+               <div class="address-item">
+                <h3 class="h3 ">
+                  Социальные сети
+                 </h3>
+                 <div class="social">
+                  <img src="./img/social.svg" alt="social" width="30px" height="30px">
+                  <img src="./img/social.svg" alt="social" width="30px" height="30px">
+                  <img src="./img/social.svg" alt="social" width="30px" height="30px">
+                 </div>
+               </div>
 
-             </div>
-             <div class="contacts-info__tel">
 
-             </div>
-             <div class="contacts-info__form">
+             </address>
+             <address class="address">
+              <div class="address-item">
+                <h3 class="h3 ">
+                  Режим работы
+                 </h3>
+                 <span>Пн-Вт: 10.00 — 19.00; Сб-Вс: 10.00 — 15.00</span>
+               </div>
+              <div class="address-item">
+                <h3 class="h3 ">
+                  Телефон
+                 </h3>
+                 <span>8 (800) 900-00-00</span>
+               </div>
+             </address>
+             <div class="contacts-form">
+                <h3 class="h3 ">
+                Остались вопросы?
+                </h3>
+                <form for="info" class="form" action="#">
+                  <div class="form-item">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input id="name" type="text" class="form-input" placeholder="Иван Иванов">
+                  </div>
+                  <div class="form-item">
+                    <label for="email" class="form-label">Телефон / E-mail</label>
+                    <input id="email" type="text" class="form-input" placeholder="example@example.com">
+                  </div>
+                  <div class="form-item">
+                    <label for="msg" class="form-label">Ваше сообщение</label>
+                    <div class="input-clip">
+                      <input id="msg" type="text" class="form-input" placeholder="Текст обращения">
+                      <img src="./img/Clip.svg" alt="clip" width="18px" height="18px">
+                    </div>
+                  </div>
+               </form>
+               
 
+               <p class="form-desc">Нажимая на кнопку «Получить консультацию», вы соглашаетесь <br>
+                на <span>обработку персональных данных</span> </p>
+               <img src="./img/Dots.svg" alt="dots" class="dots" width="142px" height="1px">
+
+              <button id="info" class="btn btn-form">
+                Получить консультацию
+              </button>
              </div>
           </div>
         </div>
@@ -131,5 +193,8 @@
       </section>
 
     </main>
+    <footer class="footer">
+      
+    </footer>
   </body>
 </html>
