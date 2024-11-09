@@ -43,6 +43,9 @@
     font-family: var(--font-family);
 }
 
+
+/* header section start */
+
 .header {
     position: relative;
     width: 100%;
@@ -54,7 +57,7 @@
     /* gap: 357px; */
     /* margin-bottom: 57px; */
     border: 1px solid green;
-    margin-bottom: 65px;
+    /* margin-bottom: 65px; */
 }
 
 .header__mapmarker, .header__phone {
@@ -101,11 +104,11 @@
     color:#222222B2;
 }
 
-.nav-left-block {
-    margin-right: 452px;
-}
+/* header section end */
 
-.main, .section, .promo {
+/* section promo start */
+
+.main, .promo {
     width: 100%;
     position: relative;
     display: flex;
@@ -113,6 +116,14 @@
     align-items: center;
     border: 1px solid green;
 
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.promo {
+    padding-top: 65px;
 }
 
 .h1 {
@@ -145,18 +156,22 @@
     cursor: pointer;
 }
 
-.leave-request {
+
+
+
+.btn-request {
     width: 207px;
     height: 40px;
     margin-bottom: 84px;
 }
 
-.leave-request::before {
+.btn-request::before {
     position: absolute;
     content: url('./img/Rectangle__btn.svg');
     top: 5px;
     left: -13px;                         
 }
+
 
 
 .wrapper__sub-menu {
@@ -169,6 +184,8 @@
     padding-top: 173px;
 
     background-image: url(./img/bg-main.png);
+    /* background-size: no-repeat; */
+    background-size: 100% 100%;
 
     border: 1px solid green;
 
@@ -208,10 +225,145 @@
 
 }
 
+/* section promo end */
+
+/* section portfolio start */
+
+.portfolio {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    padding-top: 136px;
+    padding-left: 90px;
+    border: 1px solid blue;
+}
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 1px solid red;
+
+}
+
+.portfolio-header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+.portfolio-examples {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(4, 270px);
+    gap: 10px;
+    grid-template-areas:
+        "photo1 photo1 photo2"
+        "photo3 photo4 photo2"
+        "photo5 photo6 photo7"
+        "photo5 photo8 photo8";
+    border: 1px solid blue;
+    margin-left: 80px;
+    margin-bottom: 64px;
+}
+
+.photo1 {
+    grid-area: photo1;
+}
+.photo2 {
+    grid-area: photo2;
+}
+.photo3 {
+    grid-area: photo3;
+}
+.photo4 {
+    grid-area: photo4;
+}
+.photo5 {
+    grid-area: photo5;
+}
+.photo6 {
+    grid-area: photo6;
+}
+.photo7 {
+    grid-area: photo7;
+}
+.photo8 {
+    grid-area: photo8;
+}
 
 
 
-.btn-request {
+
+
+
+.btn-projects {
+    width: 182px;
+    height: 40px;
+    align-self: center;
+}
+
+
+.btn-projects::before {
+    position: absolute;
+    content: url('./img/Rectangle__btn__projects.svg');
+    top: 5px;
+    left: -13px;                         
+}
+
+
+.contacts {
+    width: 100%;
+    padding-top: 136px;
+    padding-left: 100px;
+    border: 1px solid blue;
+
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 1px solid yellow;
+
+}
+
+.contacts-header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .btn-request {
     position: relative;
     display: flex;
     align-items: center;
@@ -230,7 +382,7 @@
 
     padding-left: 72px;
     animation: text-to-left 2s forwards;
-}
+} */
 
 @keyframes text-to-left {
     100% {
