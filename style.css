@@ -56,7 +56,7 @@
     /* gap: 132px; */
     /* gap: 357px; */
     /* margin-bottom: 57px; */
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* margin-bottom: 65px; */
 }
 
@@ -114,7 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 
 }
 
@@ -187,7 +187,7 @@
     /* background-size: no-repeat; */
     background-size: 100% 100%;
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
 
 }
 
@@ -235,14 +235,14 @@
     width: 100%;
     padding-top: 136px;
     padding-left: 90px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .portfolio-content {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -264,7 +264,7 @@
         "photo3 photo4 photo2"
         "photo5 photo6 photo7"
         "photo5 photo8 photo8";
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-left: 80px;
     margin-bottom: 64px;
 }
@@ -410,7 +410,7 @@ line-height: 24px; /* 184.615% */
 }
 
 .form-label {
-    color: var(--Black, #222);
+    color: #222;
     font-family: var(--second-family);
 
     font-size: 9px;
@@ -461,13 +461,49 @@ line-height: 24px; /* 184.615% */
 
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 24.5px;
     width: 100%;
     height: 209px;
     padding-top: 135px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+}
+
+.footer img {
+    width: 1110px;
+}
+
+.copyright {
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+
+    color: #222;
+    font-family: var(--second-family);
+
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 
 }
 
+
+
+.copyright span{
+    color: var(--Black, #222);
+
+/* H4 */
+font-family: Gilroy;
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: 20px; /* 142.857% */
+}
 
 
 
