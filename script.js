@@ -1,14 +1,15 @@
 
 const logo = document.querySelector('.logo');
 const mapMarker = document.querySelector('.mapMarker');
+const mapMarkerWrap = document.querySelector('.header__mapmarker');
 const phone = document.querySelector('.phone');
+const phoneWrap = document.querySelector('.header__phone');
 
-
+const header = document.querySelector('.header');
 const navLinks = document.querySelectorAll('.header-nav__links');
 const h1 = document.querySelector('h1');
 const testStrokeItems = document.querySelectorAll('.text-stroke');
 const btnRequest = document.querySelector('.btn-request');
-
 
 const subMenuItems = document.querySelectorAll('.sub-menu__item');
 const subMenu = document.querySelector('.wrapper__sub-menu');
@@ -19,6 +20,9 @@ function changeTheme (index) {
     mapMarker.src = '/img/Map Marker__active.svg';
     phone.src = '/img/Phone__active.svg';
     subMenu.style.backgroundImage = 'url("")';
+    header.classList.add('active');
+    mapMarkerWrap.classList.add('active');
+    phoneWrap.classList.add('active');
     navLinks[0].classList.add('active');
     navLinks[1].classList.add('active');
     h1.classList.add('active');
@@ -41,6 +45,7 @@ function changeTheme (index) {
             mainPromo.style.backgroundImage = 'url(./img/bg-menu4.png)';
             h1.textContent = 'Ремонт помещений';
             break;
+        
     }
 }
 
@@ -48,20 +53,3 @@ subMenuItems.forEach((elem, index) => {
     elem.addEventListener('click', () => {
         changeTheme(index)})
 })
-
-
-// subMenuItems[0].addEventListener('click', () => {
-//     logo.src = '/img/Logo__active.svg';
-//     mapMarker.src = '/img/Map Marker__active.svg';
-//     phone.src = '/img/Phone__active.svg';
-//     subMenu.style.backgroundImage = 'url("")';
-//     mainPromo.style.backgroundImage = 'url(./img/bg-menu1.png)';
-//     navLinks[0].classList.add('active');
-//     navLinks[1].classList.add('active');
-//     h1.classList.add('active');
-//     h1.textContent = 'Услуги по ремонту';
-//     testStrokeItems[0].classList.add('active');
-//     testStrokeItems[1].classList.add('active');
-//     btnRequest.classList.add('active');
-
-// })
