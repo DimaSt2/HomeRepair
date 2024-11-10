@@ -156,6 +156,8 @@
 
 .promo {
     padding-top: 65px;
+    /* width: 100%; */
+    /* border: 1px solid blue; */
 }
 
 .h1 {
@@ -164,7 +166,7 @@
     line-height: 72px; /* 112.5% */
     text-align: center;
 
-    width: 981px;
+    /* width: 981px; */
     /* mix-blend-mode:difference; */
 }
 
@@ -293,6 +295,7 @@ h1.active {
     line-height: normal;
     text-align: center;
     color: #FFF;
+    cursor: pointer;
 
     /* margin: auto; */
     /* border-width: 1px; */
@@ -304,7 +307,11 @@ h1.active {
 }
 
 
-
+/* .new {position: relative;
+    background-color: red;
+    padding-bottom: 800px;
+    background: transparent;
+} */
 
 
 /* section promo end */
