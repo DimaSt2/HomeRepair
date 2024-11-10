@@ -8,29 +8,31 @@
     <script src="script.js" defer></script>
   </head>
   <body class="body">
-    <main class="main">
-      <header class="header">
+    <main class="main main-promo">
+      <header class="header ">
         <a class="header__mapmarker" href="/">
-          <img class="img__map" src="/img/Map Marker.svg" alt="map" />
+          <img class="mapMarker" src="/img/Map Marker.svg" alt="map" />
         </a>
         <a class="header__logo" href="/">
-          <img src="/img/Logo.svg" alt="logo" />
+          <img class="logo" src="/img/Logo.svg" alt="logo" />
         </a>  
         <nav class="header__nav">
-          <ul class="header-nav__links nav-left-block">
+          <ul class="header-nav__links "> 
+          <!-- <ul class="header-nav__links active">  -->
             <li>
-              <a class="header-nav__link" href="#">Главная</a>
+              <a class="header-nav__link " href="#">Главная</a>
             </li>
             <li>
-              <a class="header-nav__link" href="#">О компании</a>
+              <a class="header-nav__link " href="#">О компании</a>
             </li>
             <li>
-              <a class="header-nav__link" href="#">Услуги</a>
+              <a class="header-nav__link " href="#">Услуги</a>
             </li>
             </ul>
           </nav>
           <nav class="header__nav">
-            <ul class="header-nav__links">
+            <ul class="header-nav__links ">
+            <!-- <ul class="header-nav__links active"> -->
             <li>
               <a class="header-nav__link" href="#">Цены</a>
             </li>
@@ -41,23 +43,27 @@
               <a class="header-nav__link" href="#">Контакты</a>
             </li>
           </ul>
-        
         </nav>
         
         
         <a class="header__phone" href="/">
-          <img class="img__phone" src="/img/Phone.svg" alt="phone" />
+          <img class="phone" src="/img/Phone.svg" alt="phone" />
         </a>
       </header>
 
 
       <section class="section promo">
-        <h1 class="h1">Ремонт 
+        <h1 class="h1" >Ремонт 
+        <!-- <h1 class="h1 active" >Ремонт  -->
           <span class="text-stroke">и</span> дизайн <br>
-          <span class="text-stroke">в Москве и Московской области</span>
+          <!-- <span class="text-stroke active">и</span> дизайн <br> -->
+          
+          <!-- <span class="text-stroke active">в Москве и Московской области</span> -->
         </h1>
+        <span class="h1 text-stroke">в Москве и Московской области</span>
         
         <button class="btn btn-request" type="button">
+        <!-- <button class="btn btn-request active" type="button"> -->
           Оставить заявку
         </button>
         
@@ -70,9 +76,9 @@
             </div>
            <img src="./img/Arrow Circle Down.svg" alt="arrow-down" width="40px" height="40px">   
         </div>
-        
       </section>
-
+   </main>
+   <main class="main"></main>
       <section class="section portfolio">
           <div class="portfolio-content">
             <div class="portfolio-header">
