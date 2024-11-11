@@ -241,9 +241,11 @@ h1.active {
 /* section portfolio start */
 
 .portfolio {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding-top: 136px;
-    padding-left: 90px;
+    /* padding-left: 90px; */
 }
 
 .portfolio-content {
@@ -316,6 +318,8 @@ h1.active {
 /* section contacts start */
 
 .contacts {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding-top: 136px;
     padding-left: 100px;
